@@ -1,0 +1,24 @@
+{
+  "name": "vue-workshop",
+  "version": "0.1.0",
+  "description": "Exercises for learning Vue.js used in a workshop at team neusta (Bremen, Germany)",
+  "author": "Erk Struwe <estruwe@estruwe.de>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erkstruwe/vue-workshop.git"
+  },
+  "engines": {
+    "node": "^10.13.0",
+    "npm": "^6.4.1"
+  },
+  "main": "App.vue",
+  "scripts": {
+    "start": "vue serve App.vue",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@vue/cli": "^3.11.0",
+    "@vue/cli-service-global": "^3.11.0"
+  }
+}
