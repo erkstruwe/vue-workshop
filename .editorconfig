@@ -4,10 +4,10 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 
-[*.{js,json,vue}]
+[*.{js, json, vue}]
 charset = utf-8
 indent_style = space
 indent_size = 4
 
-[package.json]
+[{package.json, package-lock.json}]
 indent_size = 2
