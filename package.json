@@ -13,11 +13,12 @@
     "npm": "^6.4.1"
   },
   "scripts": {
-    "build": "vue-cli-service build",
     "start": "vue-cli-service serve",
     "test": "npm run test:lint && npm run test:unit",
     "test:lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "test:unit:watch": "vue-cli-service test:unit --watch",
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "core-js": "^2.6.5",
