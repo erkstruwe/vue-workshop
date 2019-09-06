@@ -23,10 +23,6 @@
                 // this.animals['species' + (Object.keys(this.animals).length + 1)] = ['Peter', 'Paul']
                 Vue.set(this.animals, 'species' + (Object.keys(this.animals).length + 1), ['Peter', 'Paul'])
             },
-            spawnAnimals() {
-                const name = 'Lucy'
-                return name
-            },
             now() {
                 // this runs on each re-render, whereas computed properties are only run when relevant reactive data changes
                 return new Date()
