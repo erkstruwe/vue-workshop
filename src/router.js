@@ -6,6 +6,7 @@ import About from './components/About.vue'
 import DataComputedOption from './components/DataComputedOption'
 import MethodsOption from './components/MethodsOption'
 import TemplateSyntax from "./components/TemplateSyntax"
+import TemplateSyntaxAdvanced from "./components/TemplateSyntaxAdvanced"
 
 Vue.use(Router)
 
@@ -26,6 +27,10 @@ export default new Router({
         {
             path: '/template-syntax',
             component: TemplateSyntax,
+        },
+        {
+            path: '/template-syntax-advanced',
+            component: TemplateSyntaxAdvanced,
         },
         {
             path: '/about',

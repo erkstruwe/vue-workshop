@@ -10,8 +10,6 @@
 </template>
 
 <script>
-    import Vue from 'vue'
-
     export default {
         data() {
             return {
@@ -21,7 +19,7 @@
         methods: {
             addSpecies() {
                 // this.animals['species' + (Object.keys(this.animals).length + 1)] = ['Peter', 'Paul']
-                Vue.set(this.animals, 'species' + (Object.keys(this.animals).length + 1), ['Peter', 'Paul'])
+                this.$set(this.animals, 'species' + (Object.keys(this.animals).length + 1), ['Peter', 'Paul'])
             },
             now() {
                 // this runs on each re-render, whereas computed properties are only run when relevant reactive data changes
