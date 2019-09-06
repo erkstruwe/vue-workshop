@@ -18,7 +18,9 @@
     "test:lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "test:unit:watch": "vue-cli-service test:unit --watch",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "preversion": "npm test",
+    "postversion": "git push origin master --follow-tags"
   },
   "dependencies": {
     "core-js": "^2.6.5",
