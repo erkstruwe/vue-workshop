@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1><code>methods</code> option</h1>
+        <h1><a href="https://vuejs.org/v2/api/#methods"><code>methods</code></a> option</h1>
         <pre><code>{{animals}}</code></pre>
         <button type="button" @click="addSpecies">Create new species</button>
         <button type="button" id="lucy">Add Lucy animals</button>

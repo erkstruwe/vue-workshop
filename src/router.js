@@ -7,6 +7,7 @@ import DataComputedOption from './components/DataComputedOption'
 import MethodsOption from './components/MethodsOption'
 import TemplateSyntax from "./components/TemplateSyntax"
 import TemplateSyntaxAdvanced from "./components/TemplateSyntaxAdvanced"
+import EventHandling from "./components/EventHandling"
 
 Vue.use(Router)
 
@@ -31,6 +32,10 @@ export default new Router({
         {
             path: '/template-syntax-advanced',
             component: TemplateSyntaxAdvanced,
+        },
+        {
+            path: '/event-handling',
+            component: EventHandling,
         },
         {
             path: '/about',

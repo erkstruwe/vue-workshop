@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1><code>data</code> and <code>computed</code> option</h1>
+        <h1><a href="https://vuejs.org/v2/guide/instance.html#Data-and-Methods"><code>data</code></a> and <a href="https://vuejs.org/v2/guide/computed.html#Computed-Properties"><code>computed</code></a> option</h1>
         <p>There are {{workers}} workers available.</p>
         <p>There are {{animals.cats.length}} cats available.</p>
         <p>There are {{animals.bumblebees.length}} bumblebees available. They're called {{bumblebeeNames}}.</p>
