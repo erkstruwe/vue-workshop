@@ -8,6 +8,7 @@
             <router-link to="/template-syntax-advanced">Template syntax advanced</router-link> |
             <router-link to="/event-handling">Event handling</router-link> |
             <router-link to="/form-input">Form input</router-link> |
+            <router-link to="/component-basics">Component basics</router-link> |
             <router-link to="/about">About</router-link>
         </nav>
         <router-view/>
