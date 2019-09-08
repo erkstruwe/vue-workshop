@@ -1,5 +1,5 @@
 <template>
-    <h1>{{ msg }}</h1>
+    <h1 class="display-1">{{ msg }}</h1>
 </template>
 
 <script>
@@ -11,9 +11,3 @@
         },
     }
 </script>
-
-<style scoped lang="scss">
-    h1 {
-        color: deeppink;
-    }
-</style>

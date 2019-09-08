@@ -9,7 +9,7 @@
         <p>You can also make them invisible (CSS <code>display: none</code>) using a falsy value for the <a href="https://vuejs.org/v2/guide/conditional.html#v-show"><code>v-show</code> directive</a>.</p>
         <p v-if="show">v-if</p>
         <p v-show="show">v-show</p>
-        <button @click="show = !show">Toggle</button>
+        <button class="form-group btn btn-primary" @click="show = !show">Toggle</button>
         <p>There's also an if-then-else version of <code>v-if</code>.</p>
         <p v-if="value < 10">Low</p>
         <p v-else-if="value >= 10 && value < 20">Medium</p>

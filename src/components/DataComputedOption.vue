@@ -5,7 +5,7 @@
         <p>There are {{animals.cats.length}} cats available.</p>
         <p>There are {{animals.bumblebees.length}} bumblebees available. They're called {{bumblebeeNames}}.</p>
         <p>There are {{animalsCount}} animals available.</p>
-        <button type="button" @click="animals.bumblebees.push('Howard')">Spawn bumblebee</button>
+        <button type="button" class="form-group btn btn-primary" @click="animals.bumblebees.push('Howard')">Spawn bumblebee</button>
     </div>
 </template>
 

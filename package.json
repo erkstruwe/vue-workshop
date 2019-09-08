@@ -22,12 +22,6 @@
     "preversion": "npm test",
     "postversion": "git push origin master --follow-tags"
   },
-  "dependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10",
-    "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
-  },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-eslint": "^3.11.0",
@@ -37,10 +31,15 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
+    "bootstrap": "^4.3.1",
+    "core-js": "^2.6.5",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vue-template-compiler": "^2.6.10",
+    "vuex": "^3.0.1"
   }
 }

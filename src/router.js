@@ -14,6 +14,7 @@ import ComponentBasics from "./components/ComponentBasics"
 Vue.use(Router)
 
 export default new Router({
+    linkActiveClass: "active",
     routes: [
         {
             path: '/',
