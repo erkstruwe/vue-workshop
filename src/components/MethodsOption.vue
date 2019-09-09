@@ -2,6 +2,7 @@
     <div>
         <h1><a href="https://vuejs.org/v2/api/#methods"><code>methods</code></a> option</h1>
         <pre><code>{{ animals }}</code></pre>
+        <p>number: {{number}}</p>
         <p>Timestamp: {{ now() }}</p>
         <div class="form-group btn-group">
             <button type="button" class="btn btn-primary" @click="addSpecies">Create new species</button>
@@ -15,12 +16,14 @@
     export default {
         data() {
             return {
+                number: 5,
                 animals: {},
             }
         },
         methods: {
             addSpecies() {
-                // this.animals['species' + (Object.keys(this.animals).length + 1)] = ['Peter', 'Paul']
+                // this.number = this.number + 1
+                // this.animals["species" + (Object.keys(this.animals).length + 1)] = ["Peter","Paul"]
                 this.$set(this.animals, "species" + (Object.keys(this.animals).length + 1), ["Peter", "Paul"])
             },
             now() {

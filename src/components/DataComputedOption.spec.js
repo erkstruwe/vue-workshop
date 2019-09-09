@@ -8,7 +8,7 @@ describe("DataComputedOption.vue", function() {
         wrapper = shallowMount(DataComputedOption)
     })
 
-    it("shows the number of workers", () => {
+    it("should show the number of workers", () => {
         wrapper.setData({workers: 1336})
         expect(wrapper.text()).toContain("There are 1336 workers available.")
     })

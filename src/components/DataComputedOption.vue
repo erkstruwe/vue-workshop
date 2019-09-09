@@ -6,7 +6,7 @@
         <p>There are {{ animals.cats.length }} cats available.</p>
         <p>There are {{ animals.bumblebees.length }} bumblebees available. They're called {{ bumblebeeNames }}.</p>
         <p>There are {{ animalsCount }} animals available.</p>
-        <button type="button" class="form-group btn btn-primary" @click="animals.bumblebees.push('Howard')"> Spawn bumblebee</button>
+        <button type="button" class="form-group btn btn-primary" @click="animals.bumblebees.push('Howard')">Spawn bumblebee</button>
     </div>
 </template>
 
@@ -26,7 +26,7 @@
                 return this.animals.bumblebees.join(" & ")
             },
             animalsCount() {
-                return 1000 // this might be wrong
+                return 1000 // this might fail
             },
         },
     }
