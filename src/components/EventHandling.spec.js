@@ -3,14 +3,15 @@ import {shallowMount} from '@vue/test-utils'
 import EventHandling from './EventHandling.vue'
 
 describe('EventHandling.vue', function () {
+    let wrapper
     beforeEach(() => {
-        this.wrapper = shallowMount(EventHandling)
+        wrapper = shallowMount(EventHandling)
     })
 
     xdescribe('number', () => {
         let number
         beforeEach(() => {
-            number = this.wrapper.find('#event-handling-number')
+            number = wrapper.find('#event-handling-number')
         })
 
         it('should get bigger on right-click', () => {
