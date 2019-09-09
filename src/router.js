@@ -1,10 +1,10 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from "vue"
+import Router from "vue-router"
 
-import Home from './components/Home.vue'
-import About from './components/About.vue'
-import DataComputedOption from './components/DataComputedOption'
-import MethodsOption from './components/MethodsOption'
+import Home from "./components/Home.vue"
+import About from "./components/About.vue"
+import DataComputedOption from "./components/DataComputedOption"
+import MethodsOption from "./components/MethodsOption"
 import TemplateSyntax from "./components/TemplateSyntax"
 import TemplateSyntaxAdvanced from "./components/TemplateSyntaxAdvanced"
 import EventHandling from "./components/EventHandling"
@@ -17,39 +17,39 @@ export default new Router({
     linkActiveClass: "active",
     routes: [
         {
-            path: '/',
+            path: "/",
             component: Home,
         },
         {
-            path: '/data-computed-option',
+            path: "/data-computed-option",
             component: DataComputedOption,
         },
         {
-            path: '/methods-option',
+            path: "/methods-option",
             component: MethodsOption,
         },
         {
-            path: '/template-syntax',
+            path: "/template-syntax",
             component: TemplateSyntax,
         },
         {
-            path: '/template-syntax-advanced',
+            path: "/template-syntax-advanced",
             component: TemplateSyntaxAdvanced,
         },
         {
-            path: '/event-handling',
+            path: "/event-handling",
             component: EventHandling,
         },
         {
-            path: '/form-input',
+            path: "/form-input",
             component: FormInput,
         },
         {
-            path: '/component-basics',
+            path: "/component-basics",
             component: ComponentBasics,
         },
         {
-            path: '/about',
+            path: "/about",
             component: About,
         },
     ],

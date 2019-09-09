@@ -1,5 +1,7 @@
 <template>
-    <h1 class="display-1">{{ msg }}</h1>
+    <h1 class="display-1">
+        {{ msg }}
+    </h1>
 </template>
 
 <script>
@@ -7,6 +9,7 @@
         props: {
             msg: {
                 type: String,
+                default: "Welcome",
             },
         },
     }

@@ -1,23 +1,37 @@
 module.exports = {
     root: true,
     env: {
-        node: true
+        node: true,
     },
-    'extends': [
-        'plugin:vue/essential',
-        'eslint:recommended'
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/essential",
     ],
+    rules: {
+        indent: ["error", 4],
+        quotes: ["error", "double"],
+        semi: ["error", "never"],
+        "comma-dangle": ["error", "always-multiline"],
+
+        "vue/script-indent": ["error", 4, {baseIndent: 1}],
+    },
     parserOptions: {
-        parser: 'babel-eslint'
+        parser: "babel-eslint",
     },
     overrides: [
         {
             files: [
-                '**/*.spec.js'
+                "**/*.spec.js",
             ],
             env: {
-                jest: true
-            }
-        }
-    ]
+                jest: true,
+            },
+        },
+        {
+            files: ["*.vue"],
+            rules: {
+                indent: "off",
+            },
+        },
+    ],
 }
