@@ -70,14 +70,14 @@
         <p>In order to have your users choose multiple values you can use a group of checkboxes or a multi-select.</p>
         <div class="form-group">
             <div class="form-check">
-                <input v-model="multiCheckbox" type="checkbox" class="form-check-input">
+                <input v-model="multiCheckbox" type="checkbox" value="Bumblebee" class="form-check-input">
                 <label>Bumblebee</label>
             </div>
             <div class="form-check">
-                <input v-model="multiCheckbox" type="checkbox" class="form-check-input">
+                <input v-model="multiCheckbox" type="checkbox" value="Kangaroo" class="form-check-input">
                 <label>Kangaroo</label>
             </div>
-            {{ JSON.stringify(checkbox) }}
+            {{ JSON.stringify(multiCheckbox) }}
         </div>
         <div class="form-group">
             <select v-model="multiSelect" multiple class="form-control">
