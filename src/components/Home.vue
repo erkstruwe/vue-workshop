@@ -1,13 +1,7 @@
 <template>
-    <WelcomeMessage msg="Welcome to vue-workshop"/>
+    <h1>Welcome to vue-workshop</h1>
 </template>
 
 <script>
-    import WelcomeMessage from "../components/WelcomeMessage.vue"
-
-    export default {
-        components: {
-            WelcomeMessage,
-        },
-    }
+    export default {}
 </script>
