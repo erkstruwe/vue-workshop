@@ -13,6 +13,8 @@
                     <router-link class="nav-link" to="/component-basics">Component basics</router-link>
                     <router-link class="nav-link" to="/component-props">Component props</router-link>
                     <router-link class="nav-link" to="/component-slots">Component slots</router-link>
+                    <router-link class="nav-link" to="/component-events">Component events</router-link>
+                    <router-link class="nav-link" to="/instance-lifecycle">Instance lifecycle</router-link>
                     <router-link class="nav-link" to="/about">About</router-link>
                 </nav>
             </div>

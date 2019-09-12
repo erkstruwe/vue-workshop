@@ -16,7 +16,7 @@ describe("FancyCard.vue", function () {
         })
 
         it("should show an image if the imageUrl prop is set", () => {
-            const imageUrl = "https://tiny.pictures/example1.jpg"
+            const imageUrl = "https://demo.tiny.pictures/main/example1.jpg"
             wrapper.setProps({imageUrl})
             expect(wrapper.find("img.card-img-top").attributes("src")).toMatch(imageUrl)
         })
@@ -50,7 +50,7 @@ describe("FancyCard.vue", function () {
         })
 
         it("should display the footer slot's content", () => {
-            const footerHtml = `<div class="card-text">Yay!</div>`
+            const footerHtml = "<div class=\"card-text\">Yay!</div>"
             const wrapper = shallowMount(FancyCard, {
                 slots: {
                     footer: footerHtml,
