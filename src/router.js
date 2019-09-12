@@ -11,6 +11,7 @@ import EventHandling from "./components/EventHandling"
 import FormInput from "./components/FormInput"
 import ComponentBasics from "./components/ComponentBasics"
 import ComponentProps from "./components/ComponentProps"
+import ComponentSlots from "./components/ComponentSlots"
 
 Vue.use(Router)
 
@@ -52,6 +53,10 @@ export default new Router({
         {
             path: "/component-props",
             component: ComponentProps,
+        },
+        {
+            path: "/component-slots",
+            component: ComponentSlots,
         },
         {
             path: "/about",

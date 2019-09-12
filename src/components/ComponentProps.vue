@@ -33,15 +33,23 @@
         <p>Props form a one-way data binding from the parent to the child. Not the other way around. They behave like
             AngularJS's <code>"&lt;"</code>-style binding, not like the <code>"="</code>-style one. In order to change
             the parent's value, child components can trigger custom events.</p>
+
+        <h2>Exercise</h2>
+        <div class="card-deck">
+            <FancyCard></FancyCard>
+            <FancyCard></FancyCard>
+        </div>
     </div>
 </template>
 
 <script>
     import FancyAlert from "./FancyAlert"
+    import FancyCard from "./FancyCard"
 
     export default {
         components: {
             FancyAlert,
+            FancyCard,
         },
         data() {
             return {
