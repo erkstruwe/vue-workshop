@@ -15,6 +15,8 @@
                     <router-link class="nav-link" to="/component-slots">Component slots</router-link>
                     <router-link class="nav-link" to="/component-events">Component events</router-link>
                     <router-link class="nav-link" to="/instance-lifecycle">Instance lifecycle</router-link>
+                    <router-link class="nav-link" to="/vue-router">Vue router</router-link>
+                    <router-link class="nav-link" to="/breed">Dog breeds (router exercise)</router-link>
                     <router-link class="nav-link" to="/about">About</router-link>
                 </nav>
             </div>

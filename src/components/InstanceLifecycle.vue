@@ -27,6 +27,7 @@
         <h2>Exercise</h2>
         <h3>Dog image</h3>
         <DogImage breed="affenpinscher"></DogImage>
+        <DogImage breed="use random dogBreed from API here"></DogImage>
     </div>
 </template>
 

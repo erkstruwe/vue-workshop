@@ -4,6 +4,7 @@ import Router from "vue-router"
 import Home from "./components/Home.vue"
 import About from "./components/About.vue"
 import DataComputedOption from "./components/DataComputedOption"
+import DogBreeds from "./components/DogBreeds"
 import MethodsOption from "./components/MethodsOption"
 import TemplateSyntax from "./components/TemplateSyntax"
 import TemplateSyntaxAdvanced from "./components/TemplateSyntaxAdvanced"
@@ -14,6 +15,7 @@ import ComponentProps from "./components/ComponentProps"
 import ComponentSlots from "./components/ComponentSlots"
 import ComponentEvents from "./components/ComponentEvents"
 import InstanceLifecycle from "./components/InstanceLifecycle"
+import VueRouter from "./components/VueRouter"
 
 Vue.use(Router)
 
@@ -68,6 +70,26 @@ export default new Router({
             path: "/instance-lifecycle",
             component: InstanceLifecycle,
         },
+        {
+            path: "/vue-router/:id?",
+            component: VueRouter,
+            props: (route) => ({
+                propId: +route.params.id || undefined,
+            }),
+            meta: {
+                featured: true,
+            },
+        },
+        {
+            path: "/breed",
+            component: DogBreeds,
+        },
+        /* uncomment for router exercise
+        {
+            path: "/breed/:name",
+            component: DogBreed,
+        },
+        */
         {
             path: "/about",
             component: About,
