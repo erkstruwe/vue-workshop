@@ -46,8 +46,22 @@
         <h4><code>meta</code></h4>
         <p>Object with arbitrary properties as the route's meta information: {{$route.meta}}</p>
 
+        <h3>Built-in components</h3>
+
+        <h4><code>router-view</code></h4>
+        <p>Use the <code>&lt;router-view&gt;&lt;/router-view&gt;</code> component to define where in the parent's template the route component shall be rendered (see
+            <code>App.vue</code> for an example) .</p>
+
+        <h4><code>router-link</code></h4>
+        <p>Use the <code>&lt;router-link to="/path/of/route"&gt;Text&lt;/router-link&gt;</code> component to create an <a
+            href="https://router.vuejs.org/api/#router-link-props"><code>a</code> element</a> with the appropriate <code>href</code> attribute. It automatically gets an <a
+            href="https://router.vuejs.org/api/#active-class">active class</a> when the route or one of its descendants is active.</p>
+
         <h2>Exercise</h2>
-        <p>Take a look at the list of <router-link to="/breed">dog breeds</router-link>. Please enhance the application:</p>
+        <p>Take a look at the list of
+            <router-link to="/breed">dog breeds</router-link>
+            . Please enhance the application:
+        </p>
         <ol>
             <li>Create a new route <code>/breed/:breedName</code></li>
             <li>Create a new component <code>DogBreed</code> and use it on the created route</li>
