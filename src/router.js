@@ -10,6 +10,10 @@ import TemplateSyntaxAdvanced from "./components/TemplateSyntaxAdvanced"
 import EventHandling from "./components/EventHandling"
 import FormInput from "./components/FormInput"
 import ComponentBasics from "./components/ComponentBasics"
+import ComponentProps from "./components/ComponentProps"
+import ComponentSlots from "./components/ComponentSlots"
+import ComponentEvents from "./components/ComponentEvents"
+import InstanceLifecycle from "./components/InstanceLifecycle"
 
 Vue.use(Router)
 
@@ -47,6 +51,22 @@ export default new Router({
         {
             path: "/component-basics",
             component: ComponentBasics,
+        },
+        {
+            path: "/component-props",
+            component: ComponentProps,
+        },
+        {
+            path: "/component-slots",
+            component: ComponentSlots,
+        },
+        {
+            path: "/component-events",
+            component: ComponentEvents,
+        },
+        {
+            path: "/instance-lifecycle",
+            component: InstanceLifecycle,
         },
         {
             path: "/about",
