@@ -25,13 +25,13 @@
         <h2>Classes</h2>
         <p>The most intuitive way to conditionally apply classes is by using the <a href="https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax">object notation</a> (as in
             AngularJS).</p>
-        <h3 class="favorite-color" :class="{'favorite-bg-color': true, 'italic': italic}"> Striking headline </h3>
+        <h3 class="favorite-color" :class="{'favorite-bg-color': true, 'italic': italic}">Striking headline</h3>
 
         <h2>Inline Styles</h2>
         <p><a href="https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax-1">Inline styles</a> can be applied similar to how classes are (using the object notation).</p>
-        <h3 style="color: deeppink" :style="{background: 'black', fontStyle: fontStyle}"> Striking headline </h3>
+        <h3 style="color: deeppink" :style="{background: 'black', fontStyle: fontStyle}">Striking headline</h3>
 
-        <button class="form-group btn btn-primary" @click="italic = !italic"> Toggle italic</button>
+        <button class="form-group btn btn-primary" @click="italic = !italic">Toggle italic</button>
     </div>
 </template>
 

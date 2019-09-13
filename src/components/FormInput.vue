@@ -117,7 +117,7 @@
                 radioValue: null,
 
                 heading: {
-                    backgroundColor: null,
+                    backgroundColor: "",
                     style: null,
                 },
                 availableStyles: {

@@ -9,14 +9,14 @@
         <p>You can also make them invisible (CSS <code>display: none</code>) using a falsy value for the <a
             href="https://vuejs.org/v2/guide/conditional.html#v-show"><code>v-show</code> directive</a>.</p>
 
-        <p v-if="show"> v-if </p>
-        <p v-show="show"> v-show </p>
+        <p v-if="show">v-if</p>
+        <p v-show="show">v-show</p>
         <button class="form-group btn btn-primary" @click="show = !show"> Toggle</button>
 
         <p>There's also an if-then-else version of <code>v-if</code>.</p>
-        <p v-if="number < 10"> Low </p>
-        <p v-else-if="number >= 10 && number < 20"> Medium </p>
-        <p v-else> High </p>
+        <p v-if="number < 10">Low</p>
+        <p v-else-if="number >= 10 && number < 20">Medium</p>
+        <p v-else>High</p>
 
         <p>Use the <code>template</code> element to toggle multiple elements at once.</p>
         <template v-if="show">
@@ -30,12 +30,12 @@
             href="https://vuejs.org/v2/guide/list.html#v-for-with-an-Object">object properties</a> with a <code>v-for</code> loop. Make sure to use the <code>:key</code> directive
             to <a href="https://vuejs.org/v2/guide/list.html#Maintaining-State">maximize Vue's DOM node re-usage</a>.</p>
         <ul>
-            <li v-for="species of speciesList" :key="species.name"> {{ species.name }}, {{ species.class }}</li>
+            <li v-for="species of speciesList" :key="species.name">{{ species.name }}, {{ species.class }}</li>
         </ul>
         <dl>
             <template v-for="(value, key) in speciesList[0]">
-                <dt :key="`key-${key}`"> {{ key }}</dt>
-                <dd :key="`value-${key}`"> {{ value }}</dd>
+                <dt :key="`key-${key}`">{{ key }}</dt>
+                <dd :key="`value-${key}`">{{ value }}</dd>
             </template>
         </dl>
 
@@ -52,7 +52,7 @@
         data() {
             return {
                 show: true,
-                number: 15,
+                number: 20,
                 speciesList: [
                     {class: "Aves", name: "Parus major", legs: 2, flying: true},
                     {class: "Aves", name: "Aptenodytes forsteri", legs: 2, flying: false},
