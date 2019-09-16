@@ -8,7 +8,7 @@ module.exports = {
         "plugin:vue/essential",
     ],
     rules: {
-        indent: ["error", 4],
+        indent: ["error", 4, {SwitchCase: 1}],
         quotes: ["error", "double"],
         semi: ["error", "never"],
         "comma-dangle": ["error", "always-multiline"],

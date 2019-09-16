@@ -6,6 +6,7 @@ import About from "./components/About.vue"
 import DataComputedOption from "./components/DataComputedOption"
 import DogBreeds from "./components/DogBreeds"
 import MethodsOption from "./components/MethodsOption"
+import StateManagement from "./components/StateManagement"
 import TemplateSyntax from "./components/TemplateSyntax"
 import TemplateSyntaxAdvanced from "./components/TemplateSyntaxAdvanced"
 import EventHandling from "./components/EventHandling"
@@ -90,6 +91,10 @@ export default new Router({
             component: DogBreed,
         },
         */
+        {
+            path: "/state-management",
+            component: StateManagement,
+        },
         {
             path: "/about",
             component: About,

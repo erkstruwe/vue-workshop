@@ -17,11 +17,14 @@
                     <router-link class="nav-link" to="/instance-lifecycle">Instance lifecycle</router-link>
                     <router-link class="nav-link" to="/vue-router">Vue router</router-link>
                     <router-link class="nav-link" to="/breed">Dog breeds (router exercise)</router-link>
+                    <router-link class="nav-link" to="/state-management">State management</router-link>
                     <router-link class="nav-link" to="/about">About</router-link>
                 </nav>
             </div>
             <div class="col-9">
-                <router-view/>
+                <transition name="fade" mode="out-in">
+                    <router-view/>
+                </transition>
             </div>
         </div>
     </div>
@@ -29,4 +32,12 @@
 
 <style lang="scss">
     @import "~bootstrap/scss/bootstrap";
+
+    .fade-enter-active, .fade-leave-active {
+        transition: opacity .5s;
+    }
+
+    .fade-enter, .fade-leave-to {
+        opacity: 0;
+    }
 </style>
