@@ -8,10 +8,16 @@
         <h2>Exercise</h2>
         <div class="card-deck">
             <FancyCard>
-                Hi there!
+                Hi there, {{number}}!
             </FancyCard>
+            <FancyCard></FancyCard>
             <FancyCard>
-                Hi there!
+                <template #default>
+                    Hi there, {{number}}!
+                </template>
+                <template #abc>
+                    Cheers, {{number}}!
+                </template>
             </FancyCard>
         </div>
     </div>
@@ -26,6 +32,7 @@
         },
         data() {
             return {
+                number: 1336,
             }
         },
     }

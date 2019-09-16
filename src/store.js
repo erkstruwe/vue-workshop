@@ -7,6 +7,16 @@ export default new Vuex.Store({
     strict: process.env.NODE_ENV !== "production",
     state: {
         currency: "EUR",
+        booking: {
+            form: {
+                customer: {
+                    children: [
+                        {gender: "female"},
+                        {gender: "male"},
+                    ],
+                },
+            },
+        },
     },
     getters: {
         currencySymbol(state) {
@@ -16,6 +26,9 @@ export default new Vuex.Store({
                 case "EUR":
                     return "€"
             }
+        },
+        sons(state) {
+            return state.booking.form.customer.children.filter((child) => child.gender === "male")
         },
     },
     mutations: {

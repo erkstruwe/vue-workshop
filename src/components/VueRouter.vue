@@ -65,8 +65,9 @@
         <ol>
             <li>Create a new route <code>/breed/:breedName</code></li>
             <li>Create a new component <code>DogBreed</code> and use it on the created route</li>
+            <li>Turn the list of breed names at <code>/breeds</code> into a list of links to detail pages</li>
             <li>Pass the <code>breedName</code> route parameter into the DogBreed component as a prop</li>
-            <li>Make the DogBreed component show the breed's name and an image (reuse the DogImage component)</li>
+            <li>Make the DogBreed component show the breed's name and an image (reuse the <code>DogImage</code> component)</li>
         </ol>
     </div>
 </template>

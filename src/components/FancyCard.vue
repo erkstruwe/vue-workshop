@@ -9,6 +9,7 @@
             <div class="card-text">&copy; All rights reserved.</div>
         </div>
         {{imageUrl}}
+        <!-- <slot>Default slot content</slot> -->
     </div>
 </template>
 

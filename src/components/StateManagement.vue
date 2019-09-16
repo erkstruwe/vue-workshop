@@ -16,7 +16,7 @@
         <p>If you need to handle a piece of the state in a certain way (like <code>computed</code> in a component), you can use <a href="https://vuex.vuejs.org/guide/getters.html">store
             getters</a>.</p>
         <p>Getters are exposed to a component as the <code>this.$store.getters</code> object: {{$store.getters.currencySymbol}}</p>
-        <p>They can also be injected into a component's local state by using the <code>mapGetters</code> helper function: {{currencySymbol}}</p>
+        <p>They can also be injected into a component's local state by using the <code>mapGetters</code> helper function: {{currencySymbol}} {{sons}}</p>
 
         <h3><code>mutations</code></h3>
         <p>The only way to change the state is by committing <a href="https://vuex.vuejs.org/guide/mutations.html">mutations</a>.</p>
@@ -47,6 +47,7 @@
             }),
             ...mapGetters({
                 currencySymbol: "currencySymbol",
+                sons: "sons",
             }),
         },
         methods: {

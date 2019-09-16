@@ -12,7 +12,7 @@
 
         <p>Available lifecycle hooks are <code>created</code>, <code>mounted</code>, <code>updated</code>, and <code>destroyed</code>
             along with their "before" counterparts <code>beforeCreate</code>, <code>beforeMount</code>, <code>beforeUpdate</code>,
-            and <code>beforeDestroy</code>, .</p>
+            and <code>beforeDestroy</code>.</p>
         <p>Their main difference is the availability of certain values (e. g. props) and the DOM.</p>
 
         <h2>Examples</h2>
