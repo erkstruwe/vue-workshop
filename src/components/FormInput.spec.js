@@ -2,7 +2,7 @@ import {shallowMount} from "@vue/test-utils"
 
 import FormInput from "./FormInput.vue"
 
-xdescribe("FormInput.vue", () => {
+describe("FormInput.vue", () => {
     let wrapper, heading, backgroundColor, style
     beforeEach(() => {
         wrapper = shallowMount(FormInput)

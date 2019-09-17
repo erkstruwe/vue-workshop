@@ -36,8 +36,8 @@
 
         <h2>Exercise</h2>
         <div class="card-deck">
-            <FancyCard></FancyCard>
-            <FancyCard></FancyCard>
+            <FancyCard title="One" imageUrl="https://demo.tiny.pictures/main/example1.jpg" :header="{text: 'Very shiny header', class: 'text-white bg-primary'}"></FancyCard>
+            <FancyCard title="Two"></FancyCard>
         </div>
     </div>
 </template>

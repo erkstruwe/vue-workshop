@@ -8,7 +8,7 @@ describe("TemplateSyntaxAdvanced.vue", function() {
         wrapper = shallowMount(TemplateSyntaxAdvanced)
     })
 
-    xdescribe("bird list", () => {
+    describe("bird list", () => {
         it("should filter speciesList down to birds (aves)", () => {
             const animals = wrapper.findAll("#template-syntax-advanced-birds > li")
             expect(animals.length).toBe(3)
@@ -16,7 +16,7 @@ describe("TemplateSyntaxAdvanced.vue", function() {
             expect(animals.isVisible()).toBe(true)
         })
     })
-    xdescribe("panthera list", () => {
+    describe("panthera list", () => {
         it("should filter speciesList down to pantheras", () => {
             const animals = wrapper.findAll("#template-syntax-advanced-pantheras > li")
             expect(animals.length).toBe(3)
@@ -32,7 +32,7 @@ describe("TemplateSyntaxAdvanced.vue", function() {
             expect(animal.classes("leo")).toBe(true)
         })
     })
-    xdescribe("animal lists", () => {
+    describe("animal lists", () => {
         it("should display a \"fly\" button for all flying species", () => {
             const birds = wrapper.findAll("#template-syntax-advanced-birds > li")
             expect(birds.at(0).contains("button")).toBe(true)

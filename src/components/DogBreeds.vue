@@ -2,7 +2,9 @@
     <p v-if="loading">Loading</p>
     <p v-else-if="error">Error: {{error}}</p>
     <ul v-else-if="data">
-        <li v-for="breed of breeds" :key="breed">{{breed}}</li>
+        <li v-for="breed of breeds" :key="breed">
+            <router-link :to="`/breed/${breed}`">{{breed}}</router-link>
+        </li>
     </ul>
 </template>
 

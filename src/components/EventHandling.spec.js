@@ -8,7 +8,7 @@ describe("EventHandling.vue", function() {
         wrapper = shallowMount(EventHandling)
     })
 
-    xdescribe("number", () => {
+    describe("number", () => {
         let number
         beforeEach(() => {
             number = wrapper.find("#event-handling-number")

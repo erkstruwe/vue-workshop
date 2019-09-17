@@ -17,6 +17,7 @@ import ComponentSlots from "./components/ComponentSlots"
 import ComponentEvents from "./components/ComponentEvents"
 import InstanceLifecycle from "./components/InstanceLifecycle"
 import VueRouter from "./components/VueRouter"
+import DogBreed from "./components/DogBreed"
 
 Vue.use(Router)
 
@@ -85,12 +86,13 @@ export default new Router({
             path: "/breed",
             component: DogBreeds,
         },
-        /* uncomment for router exercise
         {
-            path: "/breed/:name",
+            path: "/breed/:breedName",
             component: DogBreed,
+            props: (route) => ({
+                name: route.params.breedName,
+            }),
         },
-        */
         {
             path: "/state-management",
             component: StateManagement,

@@ -10,7 +10,7 @@
 
         <h2>Exercise</h2>
         <div class="card-deck">
-            <FancyCard :imageUrl="imageUrl">Hi there!</FancyCard>
+            <FancyCard title="One" :imageUrl="imageUrl" @image-click="toggleImage">Hi there!</FancyCard>
         </div>
     </div>
 </template>
@@ -28,6 +28,15 @@
 
                 imageUrl: "https://demo.tiny.pictures/main/example1.jpg",
             }
+        },
+        methods: {
+            toggleImage() {
+                if (this.imageUrl === "https://demo.tiny.pictures/main/example1.jpg") {
+                    this.imageUrl = "https://demo.tiny.pictures/main/example2.jpg"
+                } else {
+                    this.imageUrl = "https://demo.tiny.pictures/main/example1.jpg"
+                }
+            },
         },
     }
 </script>

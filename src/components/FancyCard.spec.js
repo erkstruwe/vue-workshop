@@ -4,7 +4,7 @@ import FancyCard from "./FancyCard.vue"
 
 describe("FancyCard.vue", function () {
     let wrapper
-    xdescribe("props", () => {
+    describe("props", () => {
         beforeEach(() => {
             wrapper = shallowMount(FancyCard)
         })
@@ -37,7 +37,7 @@ describe("FancyCard.vue", function () {
         })
     })
 
-    xdescribe("slots", () => {
+    describe("slots", () => {
         it("should display the default slot's content in the card's body", () => {
             const text = "Whoop"
             const wrapper = shallowMount(FancyCard, {

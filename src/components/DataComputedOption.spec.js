@@ -17,7 +17,7 @@ describe("DataComputedOption.vue", function() {
         expect(wrapper.vm.bumblebeeNames).toBe("one & two")
         expect(wrapper.text()).toContain("They're called one & two.")
     })
-    xit("counts the number of animals", () => {
+    it("counts the number of animals", () => {
         wrapper.setData({animals: {cats: ["one", "two"], bumblebees: ["one", "two", "three"], dogs: ["one"]}})
         expect(wrapper.vm.animalsCount).toBe(6)
     })

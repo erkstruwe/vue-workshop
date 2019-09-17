@@ -8,7 +8,7 @@ describe("ComponentEvents.vue", function() {
         wrapper = mount(ComponentEvents)
     })
 
-    xit("should change the imageUrl when an image on the fancy card is clicked", () => {
+    it("should change the imageUrl when an image on the fancy card is clicked", () => {
         wrapper.setData({imageUrl: "https://demo.tiny.pictures/main/example1.jpg"})
         const imageWrapper = wrapper.find(".card img")
         imageWrapper.trigger("click")

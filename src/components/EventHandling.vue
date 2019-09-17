@@ -17,7 +17,7 @@
 
         <h2>Exercise</h2>
         <p>The following number should get larger when left-clicked and smaller when right-clicked.</p>
-        <p id="event-handling-number" style="font-size: 12px">12</p>
+        <p id="event-handling-number" :style="{fontSize: fontSize + 'px'}" @click.left="fontSize--" @click.right.prevent="fontSize++">{{fontSize}}</p>
     </div>
 </template>
 
@@ -26,6 +26,8 @@
         data() {
             return {
                 x: null,
+
+                fontSize: 12,
             }
         },
         methods: {

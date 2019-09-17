@@ -7,15 +7,15 @@
 
         <h2>Exercise</h2>
         <div class="card-deck">
-            <FancyCard>
+            <FancyCard title="One">
                 Hi there, {{number}}!
             </FancyCard>
-            <FancyCard></FancyCard>
-            <FancyCard>
+            <FancyCard title="Two"></FancyCard>
+            <FancyCard title="Three">
                 <template #default>
                     Hi there, {{number}}!
                 </template>
-                <template #abc>
+                <template #footer>
                     Cheers, {{number}}!
                 </template>
             </FancyCard>

@@ -87,16 +87,17 @@
         </div>
 
         <h2>Exercise</h2>
-        <h3 id="form-input-heading"> Not yet fancy heading </h3>
+        <h3 id="form-input-heading" :style="compoundStyle">Not yet fancy heading </h3>
         <p>Use the following input fields to make the heading above fancy.</p>
         <div class="form-group">
             <label>Background color</label>
-            <input id="form-input-background-color" type="text" class="form-control">
+            <input id="form-input-background-color" type="text" class="form-control" v-model="heading.backgroundColor">
         </div>
         <div class="form-group">
             <label>Applicable styles</label>
-            <select id="form-input-style" class="form-control">
+            <select id="form-input-style" class="form-control" v-model="heading.style">
                 <option :value="null">None</option>
+                <option v-for="(style, styleName) of availableStyles" :key="styleName" :value="style">{{ styleName }}</option>
             </select>
         </div>
     </div>
@@ -132,6 +133,15 @@
                     },
                 },
             }
+        },
+        computed: {
+            compoundStyle() {
+                const compoundStyle = {...this.heading.style}
+                if (this.heading.backgroundColor) {
+                    compoundStyle.backgroundColor = this.heading.backgroundColor
+                }
+                return compoundStyle
+            },
         },
     }
 </script>

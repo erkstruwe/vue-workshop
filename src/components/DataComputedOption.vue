@@ -26,7 +26,11 @@
                 return this.animals.bumblebees.join(" & ")
             },
             animalsCount() {
-                return 1000 // this might fail
+                let count = 0
+                for (let animals of Object.values(this.animals)) {
+                    count += animals.length
+                }
+                return count
             },
         },
     }
