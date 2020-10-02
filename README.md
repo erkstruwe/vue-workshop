@@ -1,4 +1,4 @@
-# vue-workshop
+# vue-workshop test 3
 
 ## Project setup
 ```
